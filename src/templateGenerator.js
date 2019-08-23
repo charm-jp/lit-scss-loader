@@ -1,3 +1,5 @@
+import {unsafeCSS} from "lit-element";
+
 module.exports = function (parsedFileContents) {
   return `
         ${generateCSSImport()}   
@@ -9,5 +11,5 @@ function generateCSSImport(){
     return `import {unsafeCSS} from 'lit-element';`;
 }
 function createCssExport(parsedFileContents) {
-    return `export default unsafeCSS\`${parsedFileContents}\`;`;
+    return `export default css\`${unsafeCSS(parsedFileContents)}\`;`;
 }

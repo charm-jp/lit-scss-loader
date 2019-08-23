@@ -25,6 +25,7 @@ describe('Template Generator', () => {
 
         fileTemplate = fileContent.toJson().modules[0].modules[0].source.trim().replace(/\`/g, "\\`");
         template = generateTemplate(parsedContents);
+        console.dir(template)
     });
 
     it('Should generate the fileTemplate', () => {
