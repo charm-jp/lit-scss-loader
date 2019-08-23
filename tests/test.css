@@ -1,3 +1,6 @@
-p {
+div {
+  /* Testing out CSS */
   background-color: #000000;
+  content: "\030FB"
+  /* Because we assume that our SCSS has been already parsed */
 }
