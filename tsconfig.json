@@ -4,7 +4,7 @@
         "lib": [
             "dom", "esnext"
         ]
-        
+
     },
     "exclude": [
         "node_modules"
